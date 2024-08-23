@@ -1,3 +1,5 @@
+emailjs.init('service_qusbchp');
+
 const consultationHeader = document.querySelector('.consultation-header');
 const consultationForm = document.querySelector('#consultation-form');
 
