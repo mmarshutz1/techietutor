@@ -12,7 +12,7 @@ consultationForm.addEventListener('submit', function(event) {
     event.preventDefault();
     console.log(consultationForm);
     // Send email using EmailJS
-    emailjs.sendForm('AxW4BXAbeQVbfueqH', 'template_cdfwsep', consultationForm)
+    emailjs.sendForm('service_qusbchp', 'template_cdfwsep', consultationForm, 'AxW4BXAbeQVbfueqH')
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             consultationHeader.classList.add('slide-out');
