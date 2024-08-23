@@ -8,6 +8,7 @@ document.querySelector('.free-consultation-btn').addEventListener('click', funct
 
 consultationForm.addEventListener('submit', function(event) {
     event.preventDefault();
+    console.log(consultationForm);
     // Send email using EmailJS
     emailjs.sendForm('service_qusbchp', 'template_cdfwsep', consultationForm)
         .then(function(response) {
