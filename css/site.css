@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #1abc9c;
+}
+
+.book-now-navbar {
+    background: linear-gradient(90deg, #1abc9c, #16a085);
+    color: white;
+    padding: 8px 12px; /* Reduced padding to make the button smaller */
+    text-decoration: none;
+    border-radius: 20px; /* Reduced border radius to match smaller size */
+    position: absolute;
+    right: 20px;
+    z-index: 1100;
+    font-size: 14px; /* Reduced font size to match smaller button */
+}
+
+.book-now-navbar:hover {
+    background-color: #16a085;
+    color: white; /* No change needed here, but you could try #fff for a slightly brighter white */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn i {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1100;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a i {
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+.services, .about, .mission {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services h2, .about h2, .mission h2 {
+    color: #333;
+}
+
+.services p, .about p, .mission p {
+    color: #666;
+}
