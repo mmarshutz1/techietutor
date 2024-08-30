@@ -41,10 +41,10 @@ window.addEventListener('DOMContentLoaded', function() {
         var submenu1 = document.getElementById('submenu1');
         var submenu2Container = document.getElementById('submenu2-container');
 
-        if (selectedValue === 'repair') {
+        if (selectedValue === 'option1') {
             submenu1.style.display = 'block';
             submenu2Container.style.display = 'none';
-        } else if (selectedValue === 'tutoring') {
+        } else if (selectedValue === 'option2') {
             submenu1.style.display = 'none';
             submenu2Container.style.display = 'flex';
         } else {
