@@ -11,9 +11,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
-        <!-- Navbar Left -->
         <div class="navbar-left">
             <div class="logo">TechieTutor</div>
             <div class="dropdown">
@@ -26,12 +24,9 @@
             <a href="#">About</a>
             <a href="#">Contact</a>
         </div>
-        <!-- Book Now Button -->
         <a href="#" class="book-now-navbar">Book Now</a>
     </nav>
-    <!-- Header -->
     <header>
-        <!-- Hero Section -->
         <div class="header">
             <h1 class="header-title">TechieTutor.</h1>
             <p class="header-description">Empowering you to embrace technology, one click at a time.</p>
@@ -39,85 +34,111 @@
                 <a href="#" class="book-now-btn">Book Now</a>
                 <a href="#" class="free-consultation-btn">Free Consultation</a>
             </div>
-            <!-- Consultation Header (hidden initially) -->
             <div class="consultation-header">
-                <!-- Consultation Form -->
                 <div class="consultation-form">
                     <div class="form-container">
+                        <p id="form-subtitle">FREE CONSULTATION</p>
+                        <p id="form-title">Consultation Form</p>
+                        <p id="form-phrase">Discover a clearer understanding of technology - let us help you navigate the digital world with personalized support or reliable repair services!</p>
                         <form id="consultation-form">
                             <div class="name-fields">
                                 <input type="text" id="first_name" name="first_name" placeholder="First Name">
                                 <input type="text" id="last_name" name="last_name" placeholder="Last Name">
                             </div>
-                            <input type="email" id="email" name="email">
-                            <input type="tel" id="phone" name="phone">
+                            <div class="contact-fields">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <select name="options" id="options">
+                                <option value="">Select an option</option>
+                                <option value="option1">Repair Services</option>
+                                <option value="option2">Tutoring Services</option>
+                            </select>
+                            <select name="submenu1" id="submenu1" style="display: none;">
+                                <option value="">Select a device</option>
+                                <option value="suboption1">Laptop</option>
+                                <option value="suboption2">Desktop</option>
+                            </select>
+                            <div id="submenu2-container" style="display: none;">
+                                <select name="submenu2-1" id="submenu2-1">
+                                    <option value="">Select a topic</option>
+                                    <option value="suboption3">MacOS</option>
+                                    <option value="suboption3">Microsoft 365</option>
+                                    <option value="suboption4">Windows 10/11</option>
+                                    <option value="suboption4">Mobile Devices</option>
+                                </select>
+                                <select name="submenu2-2" id="submenu2-2">
+                                    <option value="">Select a level</option>
+                                    <option value="suboption5">Beginner</option>
+                                    <option value="suboption6">Intermediate</option>
+                                    <option value="suboption6">Advanced</option>
+                                </select>
+                            </div>
+                            <textarea id="message" name="message" placeholder="Your message" rows="4" cols="50"></textarea>
                             <input type="submit" value="Submit">
                         </form>
                     </div>
                     <div class="info-container">
+                        <div class="right-container">
+                            <div class="image">
+                              <img src="img/hands.jpg" alt="Image">
+                            </div>
+                            <div class="content">
+                              <h2>Content Title</h2>
+                              <p>Get the most out of your technology with our expert repair and tutoring services! Our skilled technicians can diagnose and fix issues with your device, getting you back up and running smoothly in no time. But that's not all - our patient and knowledgeable tutors can also help you understand and master your technology, from the basics to advanced techniques. Whether you're struggling with a specific skill or just want to learn more about your device, we're here to help. With personalized guidance and expert support, you'll be navigating the digital world with confidence in no time!</p>
+                            </div>
+                          </div>
                         <div class="consultation-info">
-                            <h2>Free Consultation</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Main Content -->
     <main>
-        <!-- Why Us Section -->
         <div class="why-us">
             <div class="reasons">
-                <!-- Reason 1 -->
                 <div class="reason">
                     <div class="icon"><i class="fas fa-user-graduate"></i></div>
                     <p>Experienced Tutors</p>
                 </div>
-                <!-- Reason 2 -->
                 <div class="reason">
                     <div class="icon"><i class="fas fa-book-open"></i></div>
                     <p>Comprehensive Resources</p>
                 </div>
-                <!-- Reason 3 -->
                 <div class="reason">
                     <div class="icon"><i class="fas fa-clock"></i></div>
                     <p>Flexible Scheduling</p>
                 </div>
-                <!-- Reason 4 -->
                 <div class="reason">
                     <div class="icon"><i class="fas fa-laptop"></i></div>
                     <p>Online & In-Person</p>
                 </div>
-                <!-- Reason 5 -->
                 <div class="reason">
                     <div class="icon"><i class="fas fa-thumbs-up"></i></div>
                     <p>Proven Results</p>
                 </div>
-                <!-- Reason 6 -->
                 <div class="reason">
                     <div class="icon"><i class="fas fa-handshake"></i></div>
                     <p>Personalized Approach</p>
                 </div>
             </div>
         </div>
-        <!-- Services Section -->
         <div class="content">
             <div class="services">
                 <h2>Our Services</h2>
                 <p>We offer personalized tutoring sessions for a variety of subjects, including mathematics, science, and English. Our experienced tutors work with students of all ages to help them achieve their academic goals.</p>
             </div>
-            <!-- About Section -->
             <div class="about">
                 <h2>About Us</h2>
                 <p>We are a team of dedicated professionals committed to helping students excel in their academic pursuits. With years of experience in education, we provide high-quality tutoring services tailored to each student's needs.</p>
             </div>
-            <!-- Mission Section -->
             <div class="mission">
                 <h2>Mission Statement</h2>
                 <p>Our mission is to empower students through education, helping them to reach their full potential. We believe that with the right guidance and support, every student can succeed and achieve their academic dreams.</p>
             </div>
         </div>
     </main>
-</body>
-</html>
+    </body>
+    </html>

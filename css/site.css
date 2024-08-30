@@ -40,18 +40,18 @@ body {
 .book-now-navbar {
     background: linear-gradient(90deg, #1abc9c, #16a085);
     color: white;
-    padding: 8px 12px; /* Reduced padding to make the button smaller */
+    padding: 8px 12px;
     text-decoration: none;
-    border-radius: 20px; /* Reduced border radius to match smaller size */
+    border-radius: 20px;
     position: absolute;
     right: 20px;
     z-index: 1100;
-    font-size: 14px; /* Reduced font size to match smaller button */
+    font-size: 14px;
 }
 
 .book-now-navbar:hover {
     background-color: #16a085;
-    color: white; /* No change needed here, but you could try #fff for a slightly brighter white */
+    color: white;
 }
 
 .dropdown {
