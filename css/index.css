@@ -286,7 +286,7 @@ body {
     border-radius: 20px 0 0 20px;
   }
   
-  .content {
+  .info-content {
     font-size: 14px;
     width: 60%;
     border-radius: 20px;
@@ -297,7 +297,7 @@ body {
     box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
   }
 
-  .content p {
+  .info-content p {
     font-size: 14px;
   }
 
