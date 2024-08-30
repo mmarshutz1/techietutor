@@ -35,21 +35,23 @@ consultationForm.addEventListener('submit', function(event) {
         });
 });
 
-document.getElementById('options').addEventListener('change', function() {
-    var selectedValue = this.value;
-    var submenu1 = document.getElementById('submenu1');
-    var submenu2Container = document.getElementById('submenu2-container');
+window.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('options').addEventListener('change', function() {
+        var selectedValue = this.value;
+        var submenu1 = document.getElementById('submenu1');
+        var submenu2Container = document.getElementById('submenu2-container');
 
-    if (selectedValue === 'option1') {
-        submenu1.style.display = 'block';
-        submenu2Container.style.display = 'none';
-    } else if (selectedValue === 'option2') {
-        submenu1.style.display = 'none';
-        submenu2Container.style.display = 'flex';
-    } else {
-        submenu1.style.display = 'none';
-        submenu2Container.style.display = 'none';
-    }
+        if (selectedValue === 'option1') {
+            submenu1.style.display = 'block';
+            submenu2Container.style.display = 'none';
+        } else if (selectedValue === 'option2') {
+            submenu1.style.display = 'none';
+            submenu2Container.style.display = 'flex';
+        } else {
+            submenu1.style.display = 'none';
+            submenu2Container.style.display = 'none';
+        }
+    });
 });
 
 document.querySelector('.header').addEventListener('mousemove', function(e) {
