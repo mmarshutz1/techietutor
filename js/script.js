@@ -40,10 +40,10 @@ document.getElementById('options').addEventListener('change', function() {
     var submenu1 = document.getElementById('submenu1');
     var submenu2Container = document.getElementById('submenu2-container');
 
-    if (selectedValue === 'Laptop') {
+    if (selectedValue === 'Repair') {
         submenu1.style.display = 'block';
         submenu2Container.style.display = 'none';
-    } else if (selectedValue === 'Desktop') {
+    } else if (selectedValue === 'Tutoring') {
         submenu1.style.display = 'none';
         submenu2Container.style.display = 'flex';
     } else {
